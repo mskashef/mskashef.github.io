@@ -1,0 +1,9 @@
+<svg id="Group_5755" data-name="Group 5755" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Ellipse_253" data-name="Ellipse 253" transform="translate(0)" fill="none" stroke="#b3bfc2" stroke-width="4">
+    <ellipse cx="32.5" cy="32.5" rx="32.5" ry="32.5" stroke="none"/>
+    <ellipse cx="32.5" cy="32.5" rx="30.5" ry="30.5" fill="none"/>
+  </g>
+  <g id="smartphone_1_" data-name="smartphone (1)" transform="translate(19.366 12.373)">
+    <path id="Path_8879" data-name="Path 8879" d="M99.838,0h17.91a3.849,3.849,0,0,1,3.838,3.838V37.1a3.849,3.849,0,0,1-3.838,3.838H99.838A3.849,3.849,0,0,1,96,37.1V3.838A3.849,3.849,0,0,1,99.838,0ZM113.91,1.919H103.676V3.2H113.91Zm-5.117,36.459a2.559,2.559,0,1,0-2.559-2.559A2.559,2.559,0,0,0,108.793,38.378ZM98.559,30.7h20.468V5.117H98.559Z" transform="translate(-96)" fill="#b3bfc2"/>
+  </g>
+</svg>

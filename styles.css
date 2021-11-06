@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: #002b34;
+}
+
+* {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cv {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1000px;
+  min-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 5px #00000033;
+  background-color: #eeeeee;
+}
+
+.header {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--mainColor);
+}
+
+.header,
+.header * {
+  color: #ffffff;
+}
+
+.light {
+  color: #ffffff99;
+}
+
+.profile-pic-wrapper {
+  margin: 0;
+  /* height: 200px; */
+  background-image: url(./assets/img/profile-pic.jpg);
+  width: 220px;
+  /* border: 1px solid red; */
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-pic {
+  height: 100%;
+  width: auto;
+}
+
+.info {
+  margin: 10px;
+  flex: 1;
+}
+
+.contact-info {
+  padding-right: 10px;
+}
+
+.contact-icon {
+  width: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+
+.contact-value {
+  padding-left: 10px;
+}
+
+.sep {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.sep-title {
+  border-bottom: 5px solid var(--mainColor);
+  display: inline-block;
+  margin-bottom: -1px;
+  padding-bottom: 5px;
+}
+.sep-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--mainColor);
+}
+
+.body {
+  padding: 10px;
+}
+
+#summary {
+  text-align: justify;
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skills ul {
+  padding-left: 30px;
+}
+
+.experiences-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.industrial-experiences {
+  flex: 1;
+  padding: 5px;
+}
+.vdivider {
+  width: 1px;
+  background-color: var(--mainColor);
+}
+.academic-experiences {
+  flex: 1;
+  padding: 5px;
+}
+
+.card {
+  border-radius: 25px;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  display: flex;
+  margin-top: 5px;
+}
+.card ul {
+  margin-left: 30px;
+}
+.industrial-card-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* border: 1px solid var(--mainColor); */
+  border-radius: 10px;
+  margin: 5px 10px 0 5px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.tag {
+  border-radius: 5px;
+  background-color: #dddddd;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.progress {
+  background-color: #cccccc;
+  height: 15px;
+  width: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.progress-val {
+  background-color: var(--mainColor);
+  height: 15px;
+  width: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.samplework-card {
+  width: 33%;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.samplework-screenshot {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.sampleworks-screenshots {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}

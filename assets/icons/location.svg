@@ -1,0 +1,9 @@
+<svg id="Group_5756" data-name="Group 5756" xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g id="Ellipse_253" data-name="Ellipse 253" transform="translate(0)" fill="none" stroke="#b3bfc2" stroke-width="4">
+    <ellipse cx="32.5" cy="32.5" rx="32.5" ry="32.5" stroke="none"/>
+    <ellipse cx="32.5" cy="32.5" rx="30.5" ry="30.5" fill="none"/>
+  </g>
+  <g id="placeholder-filled-point_1_" data-name="placeholder-filled-point (1)" transform="translate(16.085 10.89)">
+    <path id="Path_8897" data-name="Path 8897" d="M28.975,0a16.109,16.109,0,0,1,16.09,16.091,15.7,15.7,0,0,1-1.407,6.568c-4.023,8.8-11.736,18.1-14.005,20.737a.9.9,0,0,1-1.357,0C26.028,40.758,18.315,31.464,14.29,22.66a15.689,15.689,0,0,1-1.407-6.568A16.111,16.111,0,0,1,28.975,0Zm0,24.449a8.359,8.359,0,1,0-8.358-8.358A8.368,8.368,0,0,0,28.975,24.449Z" transform="translate(-12.883)" fill="#b3bfc2"/>
+  </g>
+</svg>

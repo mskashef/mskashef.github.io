@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="Group_5780" data-name="Group 5780" transform="translate(-4756.515 -5120.515)">
+    <path id="Path_11257" data-name="Path 11257" d="M50,0H150a50,50,0,0,1,50,50V150a50,50,0,0,1-50,50H50A50,50,0,0,1,0,150V50A50,50,0,0,1,50,0Z" transform="translate(4756.515 5120.515)" fill="#fff"/>
+    <path id="Rectangle_76" data-name="Rectangle 76" d="M33,0H81a0,0,0,0,1,0,0V0A33,33,0,0,1,48,33H0a0,0,0,0,1,0,0v0A33,33,0,0,1,33,0Z" transform="translate(4822.515 5208.515)" fill="#dd2a60"/>
+    <path id="Rectangle_77" data-name="Rectangle 77" d="M0,0H49A33,33,0,0,1,82,33v0a0,0,0,0,1,0,0H33A33,33,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(4855.515 5208.515) rotate(90)" fill="#00a6e3"/>
+    <path id="Rectangle_70" data-name="Rectangle 70" d="M0,0H48A33,33,0,0,1,81,33v0a0,0,0,0,1,0,0H33A33,33,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(4822.515 5167.515)" fill="#fbab18"/>
+    <path id="Intersection_1" data-name="Intersection 1" d="M0,33A33,33,0,0,1,33,0V33Z" transform="translate(4822.515 5208.515)" fill="#5a469b"/>
+  </g>
+</svg>
