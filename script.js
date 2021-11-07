@@ -6,32 +6,32 @@ const cv = {
   name: 'M.S Kashef',
   contactInfo: [
     {
-      icon: 'assets/icons/email.svg',
+      icon: '<i class="bi bi-envelope"></i>',
       title: 'Email',
       value: 'mohammadsadeghmk[at]gmail.com',
     },
     {
-      icon: 'assets/icons/phone-number.svg',
+      icon: '<i class="bi bi-phone"></i>',
       title: 'Phone number',
       value: '+98 901 061 5710',
     },
     {
-      icon: 'assets/icons/location.svg',
+      icon: '<i class="bi bi-geo-alt"></i>',
       title: 'Location',
       value: 'Iran, West Azerbaijan, Urmia',
     },
     {
-      icon: 'assets/icons/instagram.svg',
+      icon: '<i class="bi bi-instagram"></i>',
       title: 'Instagram',
-      value: 'MSK.CODES',
+      value: 'MSK.CODES (Disabled)',
     },
     {
-      icon: 'assets/icons/linkedin.svg',
+      icon: '<i class="bi bi-linkedin"></i>',
       title: 'Linkedin',
       value: 'mskashef',
     },
     {
-      icon: 'assets/icons/github.svg',
+      icon: '<i class="bi bi-github"></i>',
       title: 'GitHub',
       value: 'mskashef',
     },
@@ -66,13 +66,23 @@ const cv = {
       skills: [
         'Responsibility',
         'Entrepreneurship',
-        'IoEmotional IntelligenceT',
+        'Emotional Intelligence',
         'Decision-making power',
         'Teaching',
         'Criticism of',
         'Creativity',
         'Problem-solving skills',
       ],
+    },
+  ],
+  education: [
+    {
+      title:
+        'BS, Computer Engineering, Urmia Univercity, Urmia, Iran (en.urmia.ac.ir)',
+      date: '2017 - 2021',
+      description:
+        'Faculty of electrical and computer engineering, Urmia University, Urmia, Iran',
+      icon: 'assets/img/academic/uu.svg',
     },
   ],
   experiences: {
@@ -373,22 +383,26 @@ function renderSeparators() {
 function getContacts() {
   function getContact(title, value, icon) {
     return `<div class="contact">
-          <img
+          <!--<img
             class="contact-icon"
             src="${icon}"
             alt="${title}"
-          />
+          /> -->
+          ${icon}
           <span class="contact-value">${value}</span>
         </div>`;
   }
-  return cv.contactInfo
-    .map(({ title, value, icon }) => getContact(title, value, icon))
-    .join('\n');
+  return (
+    `<h4>Contact Info</h4>` +
+    cv.contactInfo
+      .map(({ title, value, icon }) => getContact(title, value, icon))
+      .join('\n')
+  );
 }
 
 function getSkills() {
   function getSkill(title, skills) {
-    return `<div>
+    return `<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
           <b>${title}</b>
           <ul>
           ${skills.map((skill) => `<li>${skill}</li>`).join('\n')}
@@ -426,14 +440,17 @@ function getIndastrials() {
             <ul>
             ${tasks.map((task) => `<li>${task}</li>`).join('\n')}
             </ul>
-            ${tags.map((tag) => `<div class="tag">${tag}</div>`).join('\n')}
+            ${tags
+              .map((tag) => `<span class="badge bg-secondary">${tag}</span>`)
+              .join('\n')}
           </div>
         </div>`;
   }
   return (
-    `<b>Indastrial</b>
-  <br />
-  <br />` +
+    `<div class="sep">
+    <h4 class="sep-title">Industrial Experiences</h4>
+    <div class="sep-line"></div>
+  </div>` +
     cv.experiences.industrial
       .map(({ title, companyName, icon, date, description, tasks, tags }) =>
         getIndustrial(title, companyName, icon, date, description, tasks, tags)
@@ -441,13 +458,14 @@ function getIndastrials() {
       .join('\n')
   );
 }
+
 function getAcademics() {
   function getAcademic(title, icon, date, description) {
     return `<div class="card">
         <img
           class="industrial-card-icon"
           src="${icon}"
-          alt="Farazbal"
+          alt="Logo"
         />
         <div>
           <span class="card-title">
@@ -463,9 +481,10 @@ function getAcademics() {
   }
 
   return (
-    `<b>Academic</b>
-  <br />
-  <br />` +
+    `<div class="sep">
+    <h4 class="sep-title">Academic Experiences</h4>
+    <div class="sep-line"></div>
+  </div>` +
     cv.experiences.academic
       .map(({ title, icon, date, description }) =>
         getAcademic(title, icon, date, description)
@@ -506,8 +525,8 @@ function getLanguages() {
     return `<div class="lang">
     ${title}
     <div class="progress">
-      <div class="progress-val" style="width: ${amount}%"></div>
-    </div>
+  <div class="progress-bar" role="progressbar" style="width: ${amount}%" aria-valuenow="${amount}" aria-valuemin="0" aria-valuemax="100" style="background-color: var(--mainColor)"></div>
+</div>
   </div>`;
   }
 
@@ -532,7 +551,9 @@ function getOpensourceProjects() {
               ${description}
               </div>
               <div>${link}</div>
-              ${tags.map((tag) => `<div class="tag">${tag}</div>`).join('\n')}
+              ${tags
+                .map((tag) => `<span class="badge bg-secondary">${tag}</span>`)
+                .join('\n')}
             </div>
           </div>`;
   }
@@ -545,7 +566,9 @@ function getOpensourceProjects() {
 
 function getSampleWorks() {
   function getSampleWork(title, src, tags) {
-    return `<div class="card samplework-card" style="padding: 0">
+    return `
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding: 5px;">
+    <div class="card samplework-card" style="padding: 0;">
       <a href="${src}" target="_blank">
       <img
         class="samplework-screenshot"
@@ -554,16 +577,48 @@ function getSampleWorks() {
       />
       </a>
       <br />
-      <div style="text-align: center; font-weight: bold; font-size: 18px">
+      <div style="text-align: center; font-weight: bold; font-size: 18px;">
         ${title}
       </div>
       <div style="padding: 10px">
-        ${tags.map((tag) => `<div class="tag">${tag}</div>`).join('\n')}
+        ${tags
+          .map((tag) => `<span class="badge bg-secondary">${tag}</span>`)
+          .join('\n')}
       </div>
-    </div>`;
+    </div>
+    </div>
+    `;
   }
   return cv.sampleworks
     .map(({ title, src, tags }) => getSampleWork(title, src, tags))
+    .join('\n');
+}
+
+function getEducations() {
+  function getEducation(title, icon, date, description) {
+    return `<div class="card">
+    <img
+      class="industrial-card-icon"
+      src="${icon}"
+      alt=""
+    />
+    <div>
+      <span class="card-title">
+       ${title}
+      </span>
+      <br />
+      <b>${date}</b>
+      <div>
+        ${description}
+      </div>
+    </div>
+  </div>`;
+  }
+
+  return cv.education
+    .map(({ title, icon, date, description }) =>
+      getEducation(title, icon, date, description)
+    )
     .join('\n');
 }
 
@@ -578,6 +633,7 @@ function renderData() {
   $(`#languages`).html(getLanguages());
   $(`#opensource-projects`).html(getOpensourceProjects());
   $(`#sampleworks-screenshots`).html(getSampleWorks());
+  $(`#education`).html(getEducations());
 }
 
 $(document).ready(function () {
