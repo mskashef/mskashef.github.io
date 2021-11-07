@@ -13,22 +13,38 @@
 * {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
-
+body {
+  background: repeating-linear-gradient(
+      -45deg,
+      #00000055,
+      var(--mainColor) 10%,
+      #00000055 10%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #00000055,
+      var(--mainColor) 10%,
+      #00000055 10%
+    );
+  background-attachment: fixed;
+  background-size: 200px 200px;
+}
 .cv {
   margin: 50px auto;
   /* width: 90%; */
   /* max-width: 1000px; */
   /* min-width: 700px; */
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 0 5px 5px #00000033;
   background-color: #eeeeee;
+  overflow: hidden;
 }
 
 .header {
   /* display: flex; */
   align-items: stretch;
   background-color: var(--mainColor);
+  margin: 0;
 }
 
 .header,
