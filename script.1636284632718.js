@@ -310,6 +310,11 @@ const cv = {
   ],
   sampleworks: [
     {
+      title: 'LiboBerry Custom WYSIWYG Editor',
+      src: 'assets/img/sampleworksScreenshots/liboberry-editor.png',
+      tags: ['JS', 'React', 'Adobe XD', 'CSS', 'HTML', 'JSX'],
+    },
+    {
       title: 'Photozone',
       src: 'assets/img/sampleworksScreenshots/photozone.png',
       tags: ['JS', 'React', 'Adobe XD', 'SASS', 'HTML', 'JSX', 'NodeJs'],
