@@ -51,6 +51,7 @@ const cv = {
         'ExpressJs',
         'Java',
         'Git',
+        'Arduino',
       ],
     },
     {
