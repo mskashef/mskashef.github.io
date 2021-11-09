@@ -228,8 +228,9 @@ body {
   /* flex-flow: row wrap; */
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 5px;
+  text-align: left;
 }
 
 .container {

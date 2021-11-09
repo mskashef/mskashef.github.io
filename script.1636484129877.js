@@ -316,25 +316,30 @@ const cv = {
       demoLink: 'https://liboberry-wysiwyg-editor-demo.netlify.app/',
     },
     {
+      title: 'React File Explorer',
+      src: 'assets/img/sampleworksScreenshots/react-file-explorer.png',
+      tags: ['ReactJs', 'JavaScript', 'Adobe XD', 'HTML', 'CSS'],
+    },
+    {
       title: 'Photozone',
       src: 'assets/img/sampleworksScreenshots/photozone.png',
-      tags: ['JS', 'React', 'Adobe XD', 'SASS', 'HTML', 'JSX', 'NodeJs'],
+      tags: ['ReactJs', 'HTML', 'SASS', 'Adobe XD', 'NodeJs'],
     },
     {
       title: 'ITICA PWA',
       src: 'assets/img/sampleworksScreenshots/itica-pwa.png',
-      tags: ['JS', 'React', 'CSS', 'HTML', 'Material UI'],
+      tags: ['ReactJs', 'HTML', 'CSS', 'Material UI', 'PWA'],
       demoLink: 'https://masgh-eshgh-class-management-pwa.netlify.app/',
     },
     {
       title: 'Hooman Khalatbari',
       src: 'assets/img/sampleworksScreenshots/hooman-khalatbari.png',
-      tags: ['JS', 'React', 'SASS', 'Adobe XD', 'HTML', 'JSX'],
+      tags: ['ReactJs', 'HTML', 'SASS', 'Adobe XD'],
     },
     {
       title: 'مشق عشق',
       src: 'assets/img/sampleworksScreenshots/mashgh-eshgh.png',
-      tags: ['JS', 'React', 'SASS', 'Adobe XD', 'HTML', 'JSX'],
+      tags: ['ReactJs', 'HTML', 'SASS', 'Adobe XD'],
     },
     {
       title: 'چنجلی',
@@ -344,7 +349,7 @@ const cv = {
     {
       title: 'Rhythmitica',
       src: 'assets/img/sampleworksScreenshots/rhythmitica.png',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Adobe XD', 'JSX'],
+      tags: ['ReactJs', 'HTML', 'CSS', 'JavaScript', 'Adobe XD'],
     },
     {
       title: 'Happy Programmers day Animation',
@@ -355,12 +360,12 @@ const cv = {
     {
       title: 'HiChat',
       src: 'assets/img/sampleworksScreenshots/hichat.png',
-      tags: ['React', 'Adobe XD', 'HTML', 'SASS', 'JSX', 'JavaScript'],
+      tags: ['ReactJs', 'HTML', 'SASS', 'Adobe XD', 'JavaScript'],
     },
     {
       title: '30Bime',
       src: 'assets/img/sampleworksScreenshots/30bime.png',
-      tags: ['React', 'Adobe XD', 'HTML', 'CSS', 'JavaScript'],
+      tags: ['ReactJs', 'Adobe XD', 'HTML', 'CSS', 'JavaScript'],
     },
     {
       title: 'Farazbal',
