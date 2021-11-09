@@ -313,6 +313,7 @@ const cv = {
       title: 'LiboBerry Custom WYSIWYG Editor',
       src: 'assets/img/sampleworksScreenshots/liboberry-editor.png',
       tags: ['JS', 'React', 'Adobe XD', 'CSS', 'HTML', 'JSX'],
+      demoLink: 'https://liboberry-wysiwyg-editor-demo.netlify.app/',
     },
     {
       title: 'Photozone',
@@ -323,6 +324,7 @@ const cv = {
       title: 'ITICA PWA',
       src: 'assets/img/sampleworksScreenshots/itica-pwa.png',
       tags: ['JS', 'React', 'CSS', 'HTML', 'Material UI'],
+      demoLink: 'https://masgh-eshgh-class-management-pwa.netlify.app/',
     },
     {
       title: 'Hooman Khalatbari',
@@ -348,6 +350,7 @@ const cv = {
       title: 'Happy Programmers day Animation',
       src: 'assets/img/sampleworksScreenshots/hpd.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
+      demoLink: 'https://happy-programers-day-animation.netlify.app/',
     },
     {
       title: 'HiChat',
@@ -571,9 +574,18 @@ function getOpensourceProjects() {
 }
 
 function getSampleWorks() {
-  function getSampleWork(title, src, tags) {
+  function getSampleWork(title, src, tags, demoLink) {
     return `
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding: 5px;">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding: 5px; position: relative;">
+    ${
+      demoLink
+        ? `
+      <a target="_blank" href="${demoLink}" style="position: absolute; z-index: 10000; right: 15px; top: 20px;">
+        <button class="view-online-demo-btn">View Online Demo</button>
+      </a>
+    `
+        : ''
+    }
     <div class="card samplework-card" style="padding: 0;">
       <a href="${src}" target="_blank">
       <img
@@ -596,7 +608,9 @@ function getSampleWorks() {
     `;
   }
   return cv.sampleworks
-    .map(({ title, src, tags }) => getSampleWork(title, src, tags))
+    .map(({ title, src, tags, demoLink }) =>
+      getSampleWork(title, src, tags, demoLink)
+    )
     .join('\n');
 }
 
