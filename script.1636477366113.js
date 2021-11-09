@@ -273,7 +273,7 @@ const cv = {
       link: 'Link: <a href="https://github.com/mskashef/photozone-frontend" target="_blank">https://github.com/mskashef/photozone-frontend</a>',
     },
     {
-      title: 'PhotoZone',
+      title: 'HTML5 Snake Game',
       tags: ['React', 'JavaScript', 'HTML5', 'CSS3'],
       icon: 'assets/img/opensource-projects/html5-snake-game.svg',
       date: 'Dec 2019',
