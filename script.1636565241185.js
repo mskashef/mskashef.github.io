@@ -99,7 +99,7 @@ const cv = {
         tasks: [
           `Developed a custom WYSIWYG Editor with special facilities like suggestion support based on the AI model's output.`,
           `Developed a WebApp for user dashboard with the possibility of Project Creation, Edit, Upload the reference articles, ... .`,
-          `Developed a WebApp which use can enter data and get the standart HTML/XML output.`,
+          `Developed a WebApp which use can enter data and get the standard HTML/XML output.`,
         ],
         tags: [
           'ReactJs',
