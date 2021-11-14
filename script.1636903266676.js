@@ -90,6 +90,19 @@ const cv = {
     industrial: [
       {
         title:
+          'Co-founder of <a target="_blank" href="https://naarang.com/">Naarang</a>',
+        companyName: 'Naarang',
+        icon: 'assets/img/industrial/naarang.svg',
+        date: 'May 2021 - Present',
+        description: 'Naarang is an online menu for cafes and resaurants.',
+        tasks: [
+          `Developed a WebApp for clients which can check the menu out and see the products.`,
+          `Developed a dashboard for cafe/restaurants admins to manage the procducts, places, categories, ...`,
+        ],
+        tags: ['ReactJs', 'React Hooks', 'JS', 'HTML', 'CSS', 'Adobe XD'],
+      },
+      {
+        title:
           'React Developer at <a target="_blank" href="https://liboberry.com/">LiboBerry</a>',
         companyName: 'LiboBerry',
         icon: 'assets/img/industrial/liboberry.png',
