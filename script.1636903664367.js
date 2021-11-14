@@ -94,10 +94,10 @@ const cv = {
         companyName: 'Naarang',
         icon: 'assets/img/industrial/naarang.svg',
         date: 'May 2021 - Present',
-        description: 'Naarang is an online menu for cafes and resaurants.',
+        description: 'Naarang is an online menu for cafes and restaurants.',
         tasks: [
-          `Developed a WebApp for clients which can check the menu out and see the products.`,
-          `Developed a dashboard for cafe/restaurants admins to manage the procducts, places, categories, ...`,
+          `Developed a WebApp for the clients wich gives the clients the ability to check the menu out and see the product`,
+          `Developed a dashboard WebApp for cafe/restaurants admins which gives ability to manage the procducts, places, categories, ...`,
         ],
         tags: ['ReactJs', 'React Hooks', 'JS', 'HTML', 'CSS', 'Adobe XD'],
       },
