@@ -268,6 +268,7 @@ const cv = {
       description: `This is a simple opensource piano for someone who want's to learn a bit about working with AudioContext in
       js an also It's a good practice to increase your skills in web development.`,
       link: 'Link: <a href="https://github.com/mskashef/react-piano" target="_blank">https://github.com/mskashef/react-piano</a>',
+      demoLink: 'https://msk-react-piano.netlify.app/',
     },
     {
       title: 'React Ripple Effect',
@@ -563,7 +564,15 @@ function getLanguages() {
 }
 
 function getOpensourceProjects() {
-  function getOpensourceProject(title, icon, date, description, tags, link) {
+  function getOpensourceProject(
+    title,
+    icon,
+    date,
+    description,
+    tags,
+    link,
+    demoLink
+  ) {
     return `<div class="card">
             <img
               class="industrial-card-icon"
@@ -578,6 +587,15 @@ function getOpensourceProjects() {
               ${description}
               </div>
               <div>${link}</div>
+              ${
+                demoLink
+                  ? `<div>
+                  <a target="_blank" href="${demoLink}" >
+                    <button class="view-online-demo-btn" style="margin: 10px 0">View Online Demo</button>
+                  </a>
+                  </div>`
+                  : ''
+              }
               ${tags
                 .map((tag) => `<span class="badge bg-secondary">${tag}</span>`)
                 .join('\n')}
@@ -585,8 +603,8 @@ function getOpensourceProjects() {
           </div>`;
   }
   return cv.opensourceProjects
-    .map(({ title, icon, date, description, tags, link }) =>
-      getOpensourceProject(title, icon, date, description, tags, link)
+    .map(({ title, icon, date, description, tags, link, demoLink }) =>
+      getOpensourceProject(title, icon, date, description, tags, link, demoLink)
     )
     .join('\n');
 }
