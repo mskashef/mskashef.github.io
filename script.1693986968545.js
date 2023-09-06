@@ -11,11 +11,6 @@ const cv = {
       value: 'mohammadsadeghmk[at]gmail.com',
     },
     {
-      icon: '<i class="bi bi-phone"></i>',
-      title: 'Phone number',
-      value: '+98 901 061 5710',
-    },
-    {
       icon: '<i class="bi bi-geo-alt"></i>',
       title: 'Location',
       value: 'Iran, West Azerbaijan, Urmia',
@@ -88,6 +83,16 @@ const cv = {
   ],
   experiences: {
     industrial: [
+      {
+        title:
+          'Frontend Developer at <a target="_blank" href="https://torob.com/">Torob</a>',
+        companyName: 'Torob',
+        icon: 'assets/img/industrial/torob.svg',
+        date: 'Apr 2022 - Jun 2023',
+        description: 'مقایسه قیمت و جستجو بین صدها هزار محصول از فروشگاه‌های معتبر ایرانی',
+        tasks: [],
+        tags: ['NextJs', 'ReactJs', 'MobX', 'Webpack', 'TTAG', 'SWC', 'React Hooks', 'JS', 'HTML', 'CSS'],
+      },
       {
         title:
           'Co-founder of <a target="_blank" href="https://naarang.com/">Naarang</a>',
